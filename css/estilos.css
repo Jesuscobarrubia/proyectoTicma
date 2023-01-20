@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 0.1rem;
+}
+
+/* INFORMACION PERSONAL */
+
+.info__personal{
+    text-align: justify;
+    padding-top: 0.625rem;
+    background: #6463637d;
+    color: #ffff;
+}
+
+.info__personal--sobreMi h3, .info__personal--contacto h3{
+    text-align: center;
+}
+
+.info__personal--imagen{
+    background: white;
+    border-radius: 5%;
+    margin-bottom: 0.313rem;
+}
+
+
+.info__personal--contacto ul{
+    display: inline-block;
+}
+
+.info__personal--contacto ul li{
+    list-style: none;
+    
+}
+
+/* INFORMACION PROFESIONAL */
+
+.info__profesional{
+    background: #b9b9b92a;
+}
+
+.info__profesional--titulo{
+    background: #6463637d;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 3%;
+    margin-bottom: 0.313rem;
+    padding: 10px;
+}
+.info__profesional h1{
+    font-size: 4.125rem; 
+    margin-top: 10px;  
+    width: 90%; 
+    text-align: center;
+    color: white;
+}
+
+.info__profesional h2{
+    font-size: 3.8rem;
+    margin-top: 1.875rem;
+    width: 90%;
+    text-align: center;
+    color: white;
+}
+
+.info__profesional h3{
+    font-size: 3.7rem;
+    color: white;
+}
+
+.botonUno{
+    margin-top: 30px;
+}
+
+.botonDos, .botonTres{
+    margin-top: 30px;
+}
+
+.insti{
+    display: block;
+    color: black;
+}
+
+.sinResaltado{
+    font-weight: lighter;
+}
+
+.resaltado{
+    color: rgb(0, 98, 255);
+}
+
+.enlace{
+    color: black;
+}
+
+/* MODO OSCURO */
+.switch{
+    position: relative;
+    background: #ffff;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+}
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: rgb(56, 56, 56);
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: .3s ease all;
+    right: unset;
+}
+
+.active{
+    background: rgb(252, 255, 178);
+}
+
+.active::after{
+    right: 0;
+    left: unset;
+}
+
+.modo_oscuro{
+    background: #000;
+}

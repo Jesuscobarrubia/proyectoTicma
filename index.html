@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 info__personal">
+                <img class="info__personal--imagen" src="css/bot.png" alt="foto de perfil cv" width="100%">
+
+                <!-- INFORMACION PERSONAL -->
+                <section class="info__personal--sobreMi">
+                    <h3>Sobre Mi</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti iusto quasi temporibus, minima quis magni saepe eius aliquam ea sit ab rem laudantium quam vel repudiandae. Aspernatur natus dolorum laboriosam laborum, deleniti optio sed rerum? Officia aut voluptate magni obcaecati aperiam eos nam exercitationem! Et quas tenetur in, ducimus nisi cupiditate nam! Illum, eum nesciunt iste non fugit omnis ipsa error quam sint amet, quasi hic saepe laborum! In, praesentium. Distinctio repudiandae magnam accusamus modi perspiciatis illo amet sunt consectetur!</p>
+                </section>
+
+                <section class="info__personal--contacto">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li id="ubicacion"></li>
+                        <li id="numero"></li>
+                        <li id="correo"></li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- INFORMACION PROFESIONAL -->
+
+            <div class="col-sm-8 info__profesional">
+                <section class="info__profesional--titulo">
+                    <button class="switch" id="switch">
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <h1 id="nombre"></h1>
+                    <h2>Desarrollador</h2>
+                    <h3>Front End</h3>
+                </section>
+
+                <section class="info__profesional--formacion">
+
+
+                    <p>
+                        <button class="btn btn-primary botonUno" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Formacion Academica</button>
+                    </p>
+
+                    <div class="col">
+                        <div class="collapse multi-collapse collapse-horizontal" id="multiCollapseExample1">
+                            <div class="card card-body" style="width: 100%">
+                                <p><strong class="insti">Bachiller en Ciencias - Secundario</strong>U.E Nuestra Señora de Guadalupe. Maracaibo, Venezuela</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        <button class="btn btn-primary botonDos" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Formacion Complementaria</button>
+                    </p>
+
+                    <div class="col">
+                        <div class="collapse multi-collapse collapse-horizontal" id="multiCollapseExample2">
+                            <div class="card card-body" style="width: 100%">
+                                <p>
+                                <strong class="insti">Coder House | React Js <span class="sinResaltado">- Diciembre 2021 - Febrero 2022</span>
+                                </strong>                                
+                                <span class="resaltado">ROUTING - EVENTOS - HOOKS - CONTEXT - FIREBASE</span>
+                                <strong class="insti">Proyecto final:</strong>  https://jesuscobarrubia.github.io/ecommerce/
+
+                                <strong class="insti">Coder House | JavaScript <span class="sinResaltado">- Julio 2021 - Septiembre 2021</span>
+                                </strong>
+                                <span class="resaltado">DOM - JSON - JQUERY - AJAX</span>
+                                <strong class="insti">Proyecto final:</strong> https://jesuscobarrubia.github.io/PetShop-
+                                Carrito/productos.html
+
+                                <strong class="insti">Coder House | Desarrollo Web<span class="sinResaltado"> - Abril 2021 - Junio 2021</span>
+                                </strong>
+                                <span class="resaltado">BALSAMIQ - HTML5 - CSS3 (SASS) - BOOTSTRAP - SEO - GIT</span>
+                                <strong class="insti">Proyecto final:</strong> https://jesuscobarrubia.github.io/PetShop/
+
+                                <strong class="insti">Udemy | Desarrollo Web<span class="sinResaltado"> - Septiembre 2020 - Diciembre 2020</span>
+                                </strong>
+                                <span class="resaltado">ADOBE XD - HTML5 - CSS3 (SASS) - BOOTSTRAP - JAVASCRIPT - JQUERY - GIT</span>
+                                <strong class="insti">Proyecto final:</strong> https://jesuscobarrubia.github.io/Portafolio/                
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        <button class="btn btn-primary botonTres" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Experiencia Laboral</button>
+                    </p>
+
+                    <div class="col">
+                        <div class="collapse multi-collapse collapse-horizontal" id="multiCollapseExample3">
+                            <div class="card card-body" style="width: 100%">
+                                <p>
+                                    <strong class="insti">REX | Asesor Comercial <span class="sinResaltado">- Noviembre 2021 - Actualidad</span></strong>
+                                    <ul>
+                                        <li>Armado y seguimiento de presupuestos.</li>
+                                        <li>Manejo de caja.</li>
+                                        <li>Asesoría y cierre de ventas.</li>
+                                        <li>Manejo de personal.</li>
+                                        <li>Armado de pedidos para su entrega.</li>
+                                    </ul>
+
+                                    <strong class="insti">REX | Encargado de Depósito<span class="sinResaltado">- Enero 2021 - Noviembre 2021</span></strong>
+                                    <ul>
+                                        <li>Armado y seguimiento de presupuestos.</li>
+                                        <li>Manejo de caja.</li>
+                                        <li>Asesoría y cierre de ventas.</li>
+                                        <li>Manejo de personal.</li>
+                                        <li>Armado de pedidos para su entrega.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="animacion.js"></script>
+</body>
+</html>
+
